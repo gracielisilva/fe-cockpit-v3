@@ -1,0 +1,73 @@
+@import '../../Sass/variables.scss';
+
+.containerMenu{
+  list-style-type: none;
+  margin: 0;
+  position: fixed;
+  width: 20rem;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: none;
+  margin-top: 6rem;
+
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    font-size: 0.85rem;    
+    padding-top: 24px;
+  }
+  .MuiList-subheader :hover{
+
+    background-color: #e99d23;
+  }
+  .MuiList-subheader{
+    background-color: black;
+  }
+  .MuiListItemIcon-root{
+    color: #fff;
+  }
+  
+  .MuiCollapse-root :hover{    
+    background-color: #e99d23;
+  }
+  
+//   .sidebar a{
+//     //display: block;
+//     color: #fff;
+//     padding: 16px;
+//     text-decoration: none;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     transition: ease-in-out .4s;
+// }
+// .sidebar  a:hover{
+//       background-color: #e99d23;
+//       color: #f8f8f8;
+//   }
+
+  footer {
+    width: 20rem; 
+    color: white;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+   
+    position: absolute;
+
+    .MuiListItem-button:hover{
+    background-color: #e99d23;
+  }
+  .MuiListItemIcon-root{
+    color: #fff;
+  }
+}
+@media screen and (max-width: 1280px){
+ 
+}
+}

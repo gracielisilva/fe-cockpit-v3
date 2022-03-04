@@ -1,0 +1,16 @@
+@import '../../Sass/variables.scss';
+
+.footer{
+
+  grid-area: footer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  margin-right: 10px;
+  background-color:#0000;
+  
+  .copyright{
+    color: #FFFFFF;
+  }
+}

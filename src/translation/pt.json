@@ -1,0 +1,50 @@
+{
+    "login": [
+        {
+            "slide": [
+                {
+                    "title": "Avance com a compasso UOL",
+                    "content": "O que fazemos: nós construímos plataformas digitais para que nossos clientes possam transformar seus negócios."
+                },
+                {
+                    "title": "Painel Notanet - Aqui podemos apresentar uma frase que apresente o projeto",
+                    "content": "Fica como tarefas para definirmos com P.O e Marketing"
+                }
+            ],
+            "form": {
+                "title": "Faça seu login", 
+                "placeholderEmail": "E-mail",
+                "placeholderPassword": "Senha",
+                "button": "Acessar",
+                "enter": "Enviar",
+                "forgotPassword": "Esqueci minha senha",
+                "errorValidEmail": "Endereço de email invalido",
+                "errorEmptyEmail": "E-mail é obrigatória",
+                "errorEmptyPassword": "Senha é obrigatória",
+                "resetTitle": "Redefinir senha",
+                "sendEmailButton": "Enviar e-mail",
+                "backtologin": "Voltar para login"
+            }
+        }
+    ],
+    "dashboard": [
+        {
+            "header": [
+                {
+                  "placeholderCompany": "Compani",
+                  "placeholderNotesPerHour": "Notas emitidas por hora"
+                }
+            ]
+        }
+    ],
+    "menu":[
+        {
+            "items": [
+                {
+                    "home": "Home",
+                    "search":"Pesquisar"
+                }
+            ]
+        }
+    ]
+  }

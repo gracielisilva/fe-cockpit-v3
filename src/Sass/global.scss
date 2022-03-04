@@ -1,0 +1,166 @@
+@import-normalize; /* bring in normalize.css styles */
+@import '../Sass/variables.scss';
+@import '../Sass/mixin.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+:root {
+  --white: #ffffff;
+  --white-7: #dbdada;
+
+  --black: #231F20;
+  --black-50: #939598;
+
+  --yellow: #f7b718;
+  --orange: #f58220;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; //15px
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; //14px
+  }
+.conteiner-main{
+    display: flex !important; 
+    flex-direction: row;
+        .slick-dots {
+          top:40% !important;
+        }
+        .conteiner-slides{
+
+          display: flex !important; 
+          width: 50%;
+
+                  .slide{
+                    width: 305px !important;
+                    font-size: 3px !important;
+                    margin-left: 11% !important; 
+                  } 
+                  .slick-list .slick-track{
+                    h1{
+                      font-size: 20px;
+                    }
+                    h2{
+                      font-size: 16px;
+                    }
+                  }
+                  .img-floating{
+                      width: 100px !important;
+                    }  
+                  .img-floating-arrow{
+                      bottom: 13% !important;
+                      margin-left: 15% !important;
+                      width: 25px !important;
+                    }    
+                 
+        }
+ 
+      .conteiner-login{ 
+        width: 50%;
+        display: flex !important;
+
+        .triangle .img-floating-login{
+          width: 21% !important;
+          margin-top: 26%;
+        }
+        .triangle .img-triangle {
+            width: 83% !important;
+            margin-left: 11% !important;
+            }
+      }
+      }
+  .conteiner-main .conteiner-login .triangle form {
+
+    height: 51% !important;
+    margin-left: 47% !important;
+    bottom: 30% !important;
+
+    h3{
+      font-size: 16px !important;
+      margin-bottom: 16px !important;
+      margin-top: 10px;
+    }
+    input { 
+      width: 86% !important;
+      font-size: 10px !important;
+      padding: 10px 24px !important;
+    }
+    button{
+      width: 86% !important;
+      font-size: 12px !important; 
+      padding: 10px 20px !important;
+    }
+    a{
+      font-size: 10px !important;
+      margin-left: 30% !important;
+    }
+  }
+
+  .conteiner-main .conteiner-footer{
+    .img-logo{
+      width: 110px !important;
+    }
+    .footer-product{
+      font-size: 16px !important;
+    }
+  }
+}
+
+body {
+  background: var(--white-7);
+  
+}
+
+body,
+input,
+textarea,
+button {
+  font: 500 1rem "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} */
+p {
+  font-size: 14px;
+  padding: 10px;
+  text-align: justify;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/**********************************/
+.slick-slide{
+  font-size: 10px;
+  font-weight: 100;
+}
+.sub-opened{
+//   background-color: aquamarine;
+}  

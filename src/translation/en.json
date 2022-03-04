@@ -1,0 +1,50 @@
+{
+    "login": [
+        {
+            "slide": [
+                {
+                    "title": "Advance with the UOL bar",
+                    "content": "What we do: We build digital platforms for our customers to transform their businesses."
+                },
+                {
+                    "title": "NotaNet Panel - Here we can present a sentence that presents the project",
+                    "content": "It remains as tasks for us to define with P.O and Marketing."
+                }
+            ],
+            "form": {
+                "title": "Login",
+                "placeholderEmail": "E-mail",
+                "placeholderPassword": "Password",
+                "button": "Access",
+                "enter":"To send",
+                "forgotPassword": "I forgot my password",
+                "errorValidEmail": "Invalid email address",
+                "errorEmptyEmail": "E-mail is required",
+                "errorEmptyPassword": "Password is required",
+                "resetTitle": "Reset password",
+                "sendEmailButton": "Send e-mail",
+                "backtologin": "Back to login"
+            }
+        }
+    ],
+    "dashboard": [
+        {
+            "header": [
+                {
+                  "placeholderCompany": "Company",
+                  "placeholderNotesPerHour": "Notes per Hour"
+                }
+            ]
+          }
+   ],    
+    "menu":[
+        {
+            "items": [
+                {
+                    "home": "Home",
+                    "search":"Search"
+                }
+        ]
+      }
+    ]
+  }

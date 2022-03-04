@@ -1,0 +1,46 @@
+
+  
+@media (max-width: 450px) {
+    .conteiner-main{
+        display: initial !important;
+        flex-wrap: initial !important;
+        position: absolute !important;
+        .conteiner-slides{
+            display: none !important;
+        }
+        .conteiner-login{
+            margin: 45% 0 !important;
+        } 
+    }
+
+     .footer-product .small {
+        display: flex !important;
+        align-items: center!important;
+    }
+
+
+    .conteiner-main .conteiner-login .triangle .img-triangle {
+            width: 90% !important;
+            margin-left: 5% !important; 
+        
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+    .conteiner-main .conteiner-login form input
+    {
+        padding: 5px !important;
+        margin: 5px 0 !important;
+        font-size: 10px !important;
+    }
+    .button--medium{
+        font-size: 11px !important;
+        padding: 10px 20px !important;
+    }
+    .conteiner-main .conteiner-login form button {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }  
+ 
+
+}

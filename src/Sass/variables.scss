@@ -1,0 +1,35 @@
+$server: 'http://localhost:3000/assets/img/';
+$background: 'https://painel.uoldiveo.com.br/assets/image/bg.jpg';
+
+
+$theme:(
+  color-000000: #000000,
+  color-231F20: #231F20, 
+  color-0E0E0E: #0e0e0e,
+  color-D6DEE1: #d6dee1, 
+  color-DDDDDD: #DDDDDD, 
+  color-FFFFFF: #FFFFFF,
+  color-999999: #999999,
+  color-F7F8FC: #F7F8FC,
+  color-F9BE00: #F9BE00,
+  color-F58220: #f58220,
+  color-C13827: #c13827,
+  color-00B7C6: #00b7c6,
+  color-00707A: #00707A,
+  color-8DC63F: #8dc63f,
+  color-006D38: #006d38,
+  color-D8D8D8: #d8d8d8,
+  color-EFEFEFCE: #fffFFFce,
+  color-000000BA: #000000ba,
+  color-A7A7A73D: #a7a7a73d,
+  color-FFFFFF5C: #ffffff5c,
+  color-999:#999,
+  color-FFB7003D: #ffb7003d,
+  color-FDC22DD7: #fdc22dd7,
+);
+
+@function get-color($color){
+  $color: map-get($theme, $color);
+  
+  @return $color;
+}

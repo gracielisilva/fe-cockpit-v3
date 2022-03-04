@@ -1,0 +1,290 @@
+@import '../../Sass/mixin.scss';
+@import '../../Sass/variables.scss';
+@import '../../Sass/global.scss';
+@import '../../Sass/mobile.scss';
+
+
+
+.aparecer{
+  opacity: 1;
+  z-index: 1;
+}
+.desaparecer{
+  opacity: 0;
+  z-index: 0;
+}
+
+.slick-list{
+  overflow: hidden;
+  .slick-track{
+    display: inline-flex;
+  }
+}
+//Tradução
+.btns{
+  position: absolute;
+  margin: 0.5% 1%;
+  button{
+    padding: 2px;
+    border: none;
+    background: transparent;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 2px;
+      background-color: #00000066;
+      z-index: 8;
+      bottom: 6px;
+      right: 1px;
+      border-radius: 2px;
+    }
+  }
+  .active{
+    &::after{
+      display: none;
+    }
+  }
+}
+.conteiner-main{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    position: relative;     
+    flex-wrap: wrap;
+    //background-color: yellow;
+    background-image: url("../../assets/img/bg.jpg");
+    background-size: cover;
+    &:before{
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000000BA;
+    }
+    .conteiner-slides{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //background-color: blue;
+       
+        .img-floating{
+          transform: translate3d(0px, 0px, 0px);
+          position: absolute;
+          bottom: 3%;
+          width: 173px;
+        }
+        .img-floating-arrow{
+          transform: translate3d(0px, 0px, 0px);
+          position: absolute;
+          bottom: 30%;
+          margin-left: 15%;
+        }
+      }
+
+      .slick-dots{
+        margin: 0px;
+        display: flex !important;
+        list-style: none;
+        text-align: center;
+        position: fixed;
+        right: auto;
+        left: 0;
+        top: 50%; 
+        z-index: 1;
+        flex-direction: column;
+        bottom: auto;
+        li{
+          margin: 10px 5px;
+          button{
+            background: #999;
+            border-radius: 50%;
+            margin: 0px 0;
+            position: relative;
+            border: 0;
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            outline: none;
+            width: 20px;
+            height: 20px;
+            &:before{
+              color: #FFFFFF !important;
+            }
+          } 
+        }
+        .slick-active{
+          button{
+            background: #fdc22dd7;
+          }
+        }
+      }
+      .slick-arrow{
+        display: none !important;
+      }
+    
+      .triangule-2{
+        @include animation(6s, 0, 30px)
+      }
+    
+      .triangule-1{
+        @include animation(10s, 0, null)
+      }
+    
+      .slide{
+        font-size:20px;
+        z-index: 0;
+        color: get-color('color-FFFFFF');
+        //font-family: 'Mark Pro', sans-serif;
+        margin-left: 5%;
+        width: 575px;
+        margin-top: 0;
+        position: relative;
+      }
+
+    .conteiner-login{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: red;
+
+        .triangle{
+        align-items: center;
+        position: relative;
+        
+            .img-triangle{
+          width: 85%;
+          margin-left: 14%;
+          transition: .5s;
+            }
+  
+            .img-floating-login{
+            position: fixed;
+            margin-top: 22%;
+            margin-left: 12%;
+            opacity: 0.2;
+            }
+
+            form{
+              position: absolute; 
+              height: 40%;
+              bottom: 30%;
+              margin-left: 50%;
+                //background-color: violet;
+            }
+
+            form h3{ 
+              margin-bottom: 2.5rem;
+              color: black;
+              
+            }
+
+             form input{
+              margin-bottom: 10px;
+              height: 35px;
+              border: 0;
+              border-radius: 7px;
+              padding: 20px;
+              font-size: 15px;
+              background-color: #fff;
+              display: flex;
+              flex-direction: column;
+            }
+
+            form button{
+              display: flex;
+              flex-direction: column; 
+              justify-content: center;
+              align-items: center; 
+              border-radius: 7px;
+              background-color: black;
+              color: white; 
+              padding: 10px 85px;
+              font-size: 14px;
+              border: 0;  
+
+            }
+
+            a{
+              font-size: 12px;
+              margin-left: 48%; 
+              color: black;
+                
+            }
+  
+    }
+      
+}
+.conteiner-footer{ 
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  .img-logo{ 
+    width: 160px;
+  }
+
+  .footer-product{ 
+    font-size: x-large;
+    font-weight: 600;
+    color: get-color('color-FFFFFF');
+  }
+}
+small{
+  color: #FFFFFF;
+  position: absolute !important;
+  margin-left: 73%;
+}
+
+    @media screen and (max-width: 1280px){
+
+      .img-triangle{
+        width: 65% !important;
+        margin-left: 25% !important; 
+      }
+
+      .triangle form {
+        height: 44% !important;
+      }
+        .slide{
+        margin-left: 0% !important;
+        width: 446px !important;
+      } 
+      .slick-dots {
+        left: 16px !important;
+        top: 44%   !important;
+      }
+
+      h1 { 
+        font-size: 24px;
+      }
+
+
+      h3, h2 { 
+        font-size: 18px;
+      }
+
+    .img-floating {
+      bottom: 8% !important;
+      width: 124px !important;
+    }
+    .img-floating-arrow {
+      bottom: 23% !important;
+      margin-left: 12% !important;
+    }
+
+      small{ 
+        margin-left: 76% !important;
+      }
+
+    }
+}

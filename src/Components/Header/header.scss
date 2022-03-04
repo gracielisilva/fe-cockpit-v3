@@ -1,0 +1,47 @@
+@import '../../Sass/variables.scss';
+
+.header {
+     
+    display: flex;
+    justify-content: space-between; 
+    font-weight: bolder;
+    background-color: black;
+    color: #fff; 
+    //position: initial;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+        img {
+            width: auto;
+            height: 6em;
+            }
+
+    .produto{
+            align-items: center;
+            display: flex;
+            font-size: larger;
+            position: relative;
+            margin-inline-end: 67%;
+            }
+
+    .account-context{
+        align-items: center; 
+        display: flex;
+        margin-right: 20px;
+
+        .greetings{  
+            margin: 10px;
+            }
+        }
+
+        @media screen and (max-width: 1280px){
+            .produto{
+                margin-inline-end: 51% !important;
+            }
+
+           
+        }
+}
